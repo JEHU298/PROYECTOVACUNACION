@@ -1,16 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <!-- The DOCTYPE declaration above will set the     -->
 <!-- browser's rendering engine into                -->
 <!-- "Standards Mode". Replacing this declaration   -->
 <!-- with a "Quirks Mode" doctype is not supported. -->
-<html><head>
+
+<html>
+  <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Janusz Białobrzewski">
+    <meta name="author" content="Janusz Białobrzewski" />
     <!--                                                               -->
     <!-- Consider inlining CSS to reduce the number of requested files -->
     <!--                                                               -->
-    <link type="text/css" rel="stylesheet" href="pagina%20Archivos/JsQRScanner.css">
+    <link type="text/css" rel="stylesheet" href="JsQRScanner.css">
 
     <!--                                           -->
     <!-- Any title is fine                         -->
@@ -19,24 +21,19 @@
     
     <!--                                           -->
     <!-- This script loads your compiled module.   -->
-	<script type="text/javascript" src="js/jsqrscanner.nocache.js"></script>
-	<script type="text/javascript" src="js/9C51964BB0BBCC41BB79120ED90449EA.cache.js"></script>
-	<script type="text/javascript" src="js/88507C13C1223C3F2A335CFAAA4EF584.cache.js"></script>
-	<script type="text/javascript" src="js/B566A15506556F952CAD2B7994FFA824.cache.js"></script>
-	<script type="text/javascript" src="js/D9940D84355A4C8E89013B8814821244.cache.js"></script>
-	<script type="text/javascript" src="js/F4C3969B01AFD421179360B47BCEA2E0.cache.js"></script>
+    <script type="text/javascript" src="/JsQRScanner/jsPretty/jsqrscanner.nocache.js"></script>
   </head>
   <body>
 
     <div class="row-element-set row-element-set-QRScanner">
-    <!-- RECOMMENDED if your web app will not function without JavaScript enabled 
+    <!-- RECOMMENDED if your web app will not function without JavaScript enabled -->
     <noscript>
       <div class="row-element-set error_message">
         Your web browser must have JavaScript enabled
         in order for this application to display correctly.
       </div>
     </noscript>
-    <div class="row-element-set error_message" id="secure-connection-message" style="display: none;" hidden="">
+    <div class="row-element-set error_message" id="secure-connection-message" style="display: none;" hidden >
       You may need to serve this page over a secure connection (https) to run JsQRScanner correctly.
     </div>
     <script> 
@@ -44,7 +41,7 @@
       document.getElementById('secure-connection-message').style='display: block';
       }
       </script>  
--->
+
       <h1>JsQRScanner example</h1>
       <div class="row-element">
         <div class="FlexPanel detailsPanel QRScannerShort">
@@ -58,7 +55,7 @@
       <br>
       <div class="row-element">
         <div class="qrscanner" id="scanner">
-        <div><video class="qrPreviewVideo" autoplay="autoplay" src="pagina%20Archivos/a.html"></video></div></div>
+        </div>
       </div>
       <div class="row-element">
         <div class="form-field form-field-memo">
@@ -68,7 +65,8 @@
             </div>
           </div>
           <div class="FlexPanel form-field-input-panel">
-            <textarea id="scannedTextMemo" class="textInput form-memo form-field-input textInput-readonly" rows="3" readonly="readonly"></textarea>
+            <textarea id="scannedTextMemo" class="textInput form-memo form-field-input textInput-readonly" rows="3" readonly>
+            </textarea>
           </div>
         </div>
         <div class="form-field form-field-memo">
@@ -78,11 +76,13 @@
             </div>
           </div>
           <div class="FlexPanel form-field-input-panel">
-           <textarea id="scannedTextMemoHist" class="textInput form-memo form-field-input textInput-readonly" value="" rows="6" readonly="readonly"></textarea>
+            <textarea id="scannedTextMemoHist" class="textInput form-memo form-field-input textInput-readonly" value="" rows="6" readonly>
+            </textarea>
           </div>
         </div>
       </div>
       <br>
+      <a style="font-weight: bold;" href="https://github.com/jbialobr/JsQRScanner">The source code is hosted on GitHub</a>
     </div>
   <script type="text/javascript">
     function onQRCodeScanned(scannedText)
@@ -161,6 +161,5 @@
     	}        
     }
   </script>    
-  
-
-<iframe id="jsqrscanner" style="position: absolute; width: 0px; height: 0px; border: medium none; left: -1000px; top: -1000px;" tabindex="-1"></iframe></body></html>
+  </body>
+</html>
